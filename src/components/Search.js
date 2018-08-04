@@ -1,8 +1,8 @@
 import React from 'react';
 
-const Search= () => (
-    <form>
-        <input className="form_input" type="text" />
+const Search = (props) => (
+    <form onSubmit={props.getRecipe}>
+        <input className="form_input" type="text" name="recipeName" />
         <button className="search_btn">Search</button>
     </form>
 );
