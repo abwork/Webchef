@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
+import Search from './components/Search';
 
 class App extends Component {
   render() {
@@ -8,6 +9,7 @@ class App extends Component {
         <header className="App-header">
           <h1 className="App-title">Webchef</h1>
         </header>
+        <Search />
       </div>
     );
   }

@@ -1,0 +1,48 @@
+  .App {
+    text-align: center;
+  }
+  
+  .App-header {
+    background-color: goldenrod;
+    height: 4rem;
+    padding: 30px;
+    color: black;
+    margin-bottom: 2rem;
+  }
+  
+  .App-title {
+    font-size: 2.5em;
+  }
+  
+  body {
+    background:#f3f3f3;
+  }
+  
+/*Form styling*/
+
+.form_input {
+  background: transparent;
+  border: 0;
+  border-bottom: solid 2px #2f3b47;
+  margin-right: 10px;
+  letter-spacing: 2px;
+  width: 10%;
+  padding: 0.4rem;
+}
+
+.search_btn {
+  border: solid 1px #eb5b4c;
+  background: transparent;
+  padding: 0.2rem 0.9rem;
+  margin: 0 0.2rem;
+  border-radius: 1px;
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  margin-left: 0.7rem;
+}
+
+input[type="text"] { 
+  outline: none;
+  font-size: 1rem;
+}
