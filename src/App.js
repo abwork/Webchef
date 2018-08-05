@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 // import axios from 'axios';
 import './App.css';
 import Search from './components/Search';
+import Recipes from './components/Recipes';
 
 const API_KEY = "619791493c6727577559c260ba548e46";
 // const URL = "https://cors-anywhere.herokuapp.com/http://food2fork.com/api/search?key=619791493c6727577559c260ba548e46&q=shredded%20chicken&count=6";
@@ -41,15 +42,8 @@ class App extends Component {
         <header className="App-header">
           <h1 className="App-title">Webchef</h1>
         </header>
-        <Search getRecipe={this.getRecipe}/>
-        { this.state.recipes.map((recipe)=> {
-          return (
-            <div key={recipe.recipe_id}>
-              <img src={recipe.image_url} alt={recipe.title} />
-              <p> {recipe.title}</p>
-            </div>
-          )
-        })} 
+        <Search getRecipe={this.getRecipe} />
+        <Recipes recipes={this.state.recipes}/>
       </div>
     );
   } 
