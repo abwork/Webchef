@@ -1,22 +1,23 @@
-  .App {
-    text-align: center;
-  }
-  
-  .App-header {
-    background-color: goldenrod;
-    height: 4rem;
-    padding: 1rem;
-    color: black;
-    margin-bottom: 2rem;
-  }
-  
-  .App-title {
-    font-size: 2.5em;
-  }
-  
-  body {
-    background:#f3f3f3;
-  }
+.App {
+  text-align: center;
+}
+/* App header styling*/
+
+.App-header {
+  background-color: rgb(90, 84, 92);
+  height: 6rem;
+  padding: 2rem;
+  color: whitesmoke;
+  margin-bottom: 2rem;
+}
+
+.App-title {
+  font-size: 2.5em;
+}
+
+body {
+  background:#f3f3f3;
+}
   
 /*Form styling*/
 
@@ -49,6 +50,7 @@ input[type="text"] {
 }
 
 /* Rendering styles for recipes*/
+
 .recipe__buttons {
   border: solid 2px #e74c3c;
   background: transparent;
@@ -105,6 +107,10 @@ img {
 }
 
 /*Viewed recipe styling*/
+.container {
+  text-align: center;
+  margin: 2rem;
+}
 
 .viewed__recipe {
   margin: 0 auto;
@@ -112,7 +118,7 @@ img {
 }
 
 .viewed__recipe__img {
-  height: 500px !important;
+  height: 100%; 
 }
 
 .viewed__recipe__title {
@@ -151,4 +157,16 @@ img {
   font-size: 1rem;
   text-transform: uppercase;
   font-weight: 500;
+}
+
+/*footer styling*/
+.App-footer {
+  background-color: rgb(90, 84, 92);
+  height: 2rem;
+  color: whitesmoke;
+  margin: 0;
+}
+
+.App-author {
+  font-size: 1rem;
 }
