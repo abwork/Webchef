@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-// import axios from 'axios';
 import './App.css';
 import Search from './components/Search';
 import Recipes from './components/Recipes';
@@ -15,31 +14,17 @@ class App extends Component {
     recipes: []
   }
 
-  // getRecipe = (e) => {
-  //   const recipeName = e.target.elements.recipeName.value;
-  //   e.preventDefault();
-  //   axios.get(`https://cors-anywhere.herokuapp.com/http://food2fork.com/api/search?key=${API_KEY}&q=shredded%20chicken&count=6`)
-  //         .then(function(response) {
-  //           const data = response.data.recipes;
-  //           console.log(data);
-  //           this.setState({ recipes: data });   
-  //         }).catch(function(error) {
-  //           console.log(error.data);
-  //         }); 
-  //         console.log(this.state.recipes);
-  // }
-
   //fetch recipes and store in state
   getRecipe = async (e) => {
     const recipeName = e.target.elements.recipeName.value;
     e.preventDefault();
-    const api_call = await fetch(`https://cors-anywhere.herokuapp.com/http://food2fork.com/api/search?key=${API_KEY}&q=${recipeName}&count=15`);
+    const api_call = await fetch(`https://cors-anywhere.herokuapp.com/http://food2fork.com/api/search?key=${API_KEY}&q=${recipeName}&count=21`);
     const data = await api_call.json();
     this.setState({ recipes: data.recipes });
     console.log(this.state.recipes);
   }
 
-  //fetch data from the localstorage
+  // fetch data from the localstorage
   componentDidMount = () => {
     const data = localStorage.getItem("recipes");
     const recipes = JSON.parse(data);
@@ -48,8 +33,8 @@ class App extends Component {
     });
   }
 
-  //save recipes to local storage 
-  //to restore recipes data when we come back from the recipe view
+  // save recipes to local storage 
+  // to restore recipes data when we come back from the recipe view
   componentDidUpdate = () => {
     const recipes = JSON.stringify(this.state.recipes);
     localStorage.setItem("recipes", recipes);

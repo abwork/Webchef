@@ -6,7 +6,7 @@ const Recipes = (props) => (
         <div className="row">
         { props.recipes.map((recipe)=> {
             return (
-                <div key={recipe.title} className="col-md-4">
+                <div key={recipe.recipe_id} className="col-xs-6 col-sm-5 col-md-4">
                     <div className="recipes__box">
                         <img className="recipes__img" src={recipe.image_url} alt={recipe.title} />
                         <div className="recipe__desc">

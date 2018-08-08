@@ -1,24 +1,24 @@
-.App {
+body {
+  background:#f3f3f3;
+  min-width: 1090px;
   text-align: center;
 }
+
 /* App header styling*/
 
 .App-header {
   background-color: rgb(90, 84, 92);
   height: 6rem;
   padding: 2rem;
-  color: whitesmoke;
+  color: white;
   margin-bottom: 2rem;
 }
 
 .App-title {
-  font-size: 2.5em;
+  font-size: 3em;
+  font-family: 'Russo One';
 }
 
-body {
-  background:#f3f3f3;
-}
-  
 /*Form styling*/
 
 .form__input {
@@ -50,6 +50,10 @@ input[type="text"] {
 }
 
 /* Rendering styles for recipes*/
+
+.container {
+  margin: 0 auto;
+}
 
 .recipe__buttons {
   border: solid 2px #e74c3c;
