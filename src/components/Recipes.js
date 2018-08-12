@@ -4,14 +4,14 @@ import { Link } from 'react-router-dom';
 const Recipes = (props) => (
     <div className="container">
         <div className="row">
-        { props.recipes.map((recipe)=> {
+        { props.recipes.map((recipe) => {
             return (
-                <div key={recipe.recipe_id} className="col-xs-6 col-sm-5 col-md-4">
+                <div key={recipe.title} className="col-md-4">
                     <div className="recipes__box">
                         <img className="recipes__img" src={recipe.image_url} alt={recipe.title} />
                         <div className="recipe__desc">
                             <h4 className="recipes__title">
-                                {recipe.title.length < 25 ? `${recipe.title}` : `${recipe.title.substring(0,25)}...`} 
+                                {recipe.title.length < 20 ? `${recipe.title}` : `${recipe.title.substring(0,20)}...`} 
                             </h4>
                             <p className="recipes__subtitle">Publisher: <span>{recipe.publisher}</span></p>
                         </div>
@@ -33,5 +33,3 @@ const Recipes = (props) => (
 );
 
 export default Recipes;
-
-
