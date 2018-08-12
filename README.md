@@ -5,11 +5,11 @@ It was built with React and Router is implemented.
 
 <h2>Usage</h2>
 
-Clone repository: git clone https://github.com/abwork/webchef.git
-Navigate to the created folder: cd webchef
-Install dependencies: npm install
-Start the project: npm start
-Go to localhost: http://localhost:3000 to see the app.
+<p>Clone repository: git clone https://github.com/abwork/webchef.git</p>
+<p>Navigate to the created folder: cd webchef</p>
+<p>Install dependencies: npm install</p>
+<p>Start the project: npm start</p>
+<p>Go to localhost: http://localhost:3000 to see the app.</p>
 
 <h3>Live version: <a href="bidenaa.surge.sh"/>www.bideena.surge.sh</h3>
 
