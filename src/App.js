@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-// import axios from 'axios';
 import './App.css';
 import Search from './components/Search';
 import Recipes from './components/Recipes';
@@ -14,20 +13,6 @@ class App extends Component {
   state = {
     recipes: []
   }
-
-  // getRecipe = (e) => {
-  //   const recipeName = e.target.elements.recipeName.value;
-  //   e.preventDefault();
-  //   axios.get(`https://cors-anywhere.herokuapp.com/http://food2fork.com/api/search?key=${API_KEY}&q=shredded%20chicken&count=6`)
-  //         .then(function(response) {
-  //           const data = response.data.recipes;
-  //           console.log(data);
-  //           this.setState({ recipes: data });   
-  //         }).catch(function(error) {
-  //           console.log(error.data);
-  //         }); 
-  //         console.log(this.state.recipes);
-  // }
 
   //fetch recipes and store in state
   getRecipe = async (e) => {
