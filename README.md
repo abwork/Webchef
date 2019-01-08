@@ -10,6 +10,3 @@ It was built with React and Router is implemented.
 <p>Install dependencies: npm install</p>
 <p>Start the project: npm start</p>
 <p>Go to localhost: http://localhost:3000 to see the app.</p>
-
-<h3>Live version: <a href="http://sassychef.surge.sh/"/>sassychef.surge.sh</h3>
-
